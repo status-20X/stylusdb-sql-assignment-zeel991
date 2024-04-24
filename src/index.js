@@ -1,4 +1,3 @@
-
 // src/index.js
 
 const parseQuery = require('./queryParser');

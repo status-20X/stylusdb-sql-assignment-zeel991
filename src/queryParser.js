@@ -1,3 +1,5 @@
+// src/queryParser.js
+
 function parseQuery(query) {
     const selectRegex = /SELECT (.+?) FROM (.+?)(?: WHERE (.*))?$/i;
     const match = query.match(selectRegex);
