@@ -1,4 +1,3 @@
-
 const readCSV = require('../../src/csvReader');
 const {parseQuery} = require('../../src/queryParser');
 const executeSELECTQuery = require('../../src/index');
@@ -23,7 +22,9 @@ test('Parse SQL Query', () => {
         joinType: null,
         groupByFields: null,
         hasAggregateWithoutGroupBy: false,
-        orderByFields: null
+        orderByFields: null,
+        limit:null,
+        isDistinct: false
     });
 });
 
@@ -53,7 +54,9 @@ test('Parse SQL Query with WHERE Clause', () => {
         joinType: null,
         groupByFields: null,
         hasAggregateWithoutGroupBy: false,
-        orderByFields: null
+        orderByFields: null,
+        limit:null,
+        isDistinct: false
     });
 });
 
@@ -86,7 +89,9 @@ test('Parse SQL Query with Multiple WHERE Clauses', () => {
         joinType: null,
         groupByFields: null,
         hasAggregateWithoutGroupBy: false,
-        orderByFields: null
+        orderByFields: null,
+        limit:null,
+        isDistinct: false
     });
 });
 
